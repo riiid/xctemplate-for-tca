@@ -10,16 +10,18 @@ typealias ___FILEBASENAMEASIDENTIFIER___ = Reducer<
 
 extension ___FILEBASENAMEASIDENTIFIER___ {
   init() {
-    self = .init { state, action, environment in
-      switch action {
-      case .increase:
-        state.counter += 1
-        return .none
+    self = .combine(
+      .init { state, action, environment in
+        switch action {
+        case .increase:
+          state.counter += 1
+          return .none
 
-      case .decrease:
-        state.counter -= 1
-        return .none
+        case .decrease:
+          state.counter -= 1
+          return .none
+        }
       }
-    }
+    )
   }
 }
