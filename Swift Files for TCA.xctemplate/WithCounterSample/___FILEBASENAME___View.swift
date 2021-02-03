@@ -27,7 +27,7 @@ typealias ___VARIABLE_productName:identifier___Store = Store<
   ___VARIABLE_productName:identifier___Action
 >
 
-// MARK: - Preview
+// MARK: Preview
 
 struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
 
