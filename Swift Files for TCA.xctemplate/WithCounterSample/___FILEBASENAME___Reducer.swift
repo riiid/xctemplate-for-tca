@@ -10,7 +10,7 @@ typealias ___FILEBASENAMEASIDENTIFIER___ = Reducer<
 
 extension ___FILEBASENAMEASIDENTIFIER___ {
   init() {
-    self = .combine(
+    self = Self.combine(
       .init { state, action, environment in
         switch action {
         case .increase:
