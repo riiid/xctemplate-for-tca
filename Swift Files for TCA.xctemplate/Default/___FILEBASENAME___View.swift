@@ -7,12 +7,16 @@ import SwiftUI
 
 struct ___FILEBASENAMEASIDENTIFIER___: View {
 
-  let store: ___VARIABLE_productName:identifier___Store
+  private let store: ___VARIABLE_productName:identifier___Store
+  @ObservedObject private var viewStore: ___VARIABLE_productName:identifier___ViewStore
+
+  init(store: ___VARIABLE_productName:identifier___Store) {
+    self.store = store
+    self.viewStore = ViewStore(store)
+  }
 
   var body: some View {
-    WithViewStore(store) { viewStore in
-      Text(viewStore.greeting)
-    }
+		Text("Hello, ___VARIABLE_productName:identifier___!")
   }
 }
 
@@ -23,20 +27,28 @@ typealias ___VARIABLE_productName:identifier___Store = Store<
   ___VARIABLE_productName:identifier___Action
 >
 
+// MARK: ViewStore
+
+typealias ___VARIABLE_productName:identifier___ViewStore = ViewStore<
+  ___VARIABLE_productName:identifier___State,
+  ___VARIABLE_productName:identifier___Action
+>
+
 // MARK: Preview
 
 struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
 
   static var previews: some View {
-    ___FILEBASENAMEASIDENTIFIER___(store: store)
-      .preferredColorScheme(.light)
-    ___FILEBASENAMEASIDENTIFIER___(store: store)
-      .preferredColorScheme(.dark)
+    ForEach(ColorScheme.allCases, id: \.self) { colorScheme in
+			___FILEBASENAMEASIDENTIFIER___(store: store)
+        .preferredColorScheme(colorScheme)
+        .previewLayout(.sizeThatFits)
+    }
   }
 
   static let store: ___VARIABLE_productName:identifier___Store = .init(
-    initialState: .init(greeting: "Hello, ___VARIABLE_productName:identifier___!"),
-    reducer: ___VARIABLE_productName:identifier___Reducer(),
+    initialState: .init(),
+    reducer: .init(),
     environment: .init()
   )
 }
