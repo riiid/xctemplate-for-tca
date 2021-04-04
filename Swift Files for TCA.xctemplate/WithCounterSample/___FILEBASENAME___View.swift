@@ -7,12 +7,14 @@ import SwiftUI
 
 struct ___FILEBASENAMEASIDENTIFIER___: View {
 
+  @ObservedObject
+  private var viewStore: ___VARIABLE_productName:identifier___ViewStore
+
   private let store: ___VARIABLE_productName:identifier___Store
-  @ObservedObject private var viewStore: ___VARIABLE_productName:identifier___ViewStore
 
   init(store: ___VARIABLE_productName:identifier___Store) {
-    self.store = store
     self.viewStore = ViewStore(store)
+    self.store = store
   }
 
   var body: some View {
