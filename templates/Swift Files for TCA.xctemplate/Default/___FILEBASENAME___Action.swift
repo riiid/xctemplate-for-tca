@@ -1,4 +1,4 @@
 //___FILEHEADER___
 
-enum ___FILEBASENAMEASIDENTIFIER___: Equatable {
+public enum ___FILEBASENAMEASIDENTIFIER___: Equatable {
 }

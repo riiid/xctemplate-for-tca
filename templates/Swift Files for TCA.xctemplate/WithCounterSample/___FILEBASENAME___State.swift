@@ -1,7 +1,9 @@
 //___FILEHEADER___
 
-import ComposableArchitecture
-
-struct ___FILEBASENAMEASIDENTIFIER___: Equatable {
+public struct ___FILEBASENAMEASIDENTIFIER___: Equatable {
   var counter: Int = 0
+
+  public init(counter: Int = 0) {
+    self.counter = counter
+  }
 }

@@ -1,6 +1,6 @@
 //___FILEHEADER___
 
-import Combine
-
-struct ___FILEBASENAMEASIDENTIFIER___ {
+public struct ___FILEBASENAMEASIDENTIFIER___ {
+  public init() {
+  }
 }

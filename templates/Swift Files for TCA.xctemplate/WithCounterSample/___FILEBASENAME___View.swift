@@ -5,19 +5,19 @@ import SwiftUI
 
 // MARK: View
 
-struct ___FILEBASENAMEASIDENTIFIER___: View {
+public struct ___FILEBASENAMEASIDENTIFIER___: View {
 
   @ObservedObject
   private var viewStore: ___VARIABLE_productName:identifier___ViewStore
 
   private let store: ___VARIABLE_productName:identifier___Store
 
-  init(store: ___VARIABLE_productName:identifier___Store) {
+  public init(store: ___VARIABLE_productName:identifier___Store) {
     self.viewStore = ViewStore(store)
     self.store = store
   }
 
-  var body: some View {
+  public var body: some View {
     HStack {
       Button("-") { viewStore.send(.decrease) }
       Text(String(viewStore.counter))
@@ -28,14 +28,14 @@ struct ___FILEBASENAMEASIDENTIFIER___: View {
 
 // MARK: Store
 
-typealias ___VARIABLE_productName:identifier___Store = Store<
+public typealias ___VARIABLE_productName:identifier___Store = Store<
   ___VARIABLE_productName:identifier___State,
   ___VARIABLE_productName:identifier___Action
 >
 
 // MARK: ViewStore
 
-typealias ___VARIABLE_productName:identifier___ViewStore = ViewStore<
+public typealias ___VARIABLE_productName:identifier___ViewStore = ViewStore<
   ___VARIABLE_productName:identifier___State,
   ___VARIABLE_productName:identifier___Action
 >
@@ -45,11 +45,8 @@ typealias ___VARIABLE_productName:identifier___ViewStore = ViewStore<
 struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
 
   static var previews: some View {
-    ForEach(ColorScheme.allCases, id: \.self) { colorScheme in
-			___FILEBASENAMEASIDENTIFIER___(store: store)
-        .preferredColorScheme(colorScheme)
-        .previewLayout(.sizeThatFits)
-    }
+    ___FILEBASENAMEASIDENTIFIER___(store: store)
+      .previewLayout(.sizeThatFits)
   }
 
   static let store: ___VARIABLE_productName:identifier___Store = .init(
