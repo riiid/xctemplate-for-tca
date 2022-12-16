@@ -19,10 +19,10 @@ public struct ___FILEBASENAMEASIDENTIFIER___: View {
   }
 
   @ObservedObject
-  private var viewStore: ViewStore<___VARIABLE_productName:identifier___.State, ___VARIABLE_productName:identifier___.Action>
-  private let store: Store<___VARIABLE_productName:identifier___.State, ___VARIABLE_productName:identifier___.Action>
+  private var viewStore: ViewStoreOf<___VARIABLE_productName:identifier___>
+  private let store: StoreOf<___VARIABLE_productName:identifier___>
 
-  public init(store: Store<___VARIABLE_productName:identifier___.State, ___VARIABLE_productName:identifier___.Action>) {
+  public init(store: StoreOf<___VARIABLE_productName:identifier___>) {
     self.viewStore = .init(store)
     self.store = store
   }
@@ -36,7 +36,7 @@ struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
       .previewLayout(.sizeThatFits)
   }
 
-  static let store: Store<___VARIABLE_productName:identifier___.State, ___VARIABLE_productName:identifier___.Action> = .init(
+  static let store: StoreOf<___VARIABLE_productName:identifier___> = .init(
     initialState: .init(),
     reducer: ___VARIABLE_productName:identifier___()
   )
