@@ -2,36 +2,46 @@
 
 import Dependencies
 
-public protocol ___FILEBASENAMEASIDENTIFIER___ {
+public struct ___FILEBASENAMEASIDENTIFIER___ {
 }
 
 // MARK: - Live
 
-public final class ___FILEBASENAMEASIDENTIFIER___Live: ___FILEBASENAMEASIDENTIFIER___ {
-  public init() {
+extension ___FILEBASENAMEASIDENTIFIER___ {
+  public static var liveValue: Self {
+    return Self()
   }
 }
 
-// MARK: - Mock
+// MARK: - Test
 
-public final class ___FILEBASENAMEASIDENTIFIER___Mock: ___FILEBASENAMEASIDENTIFIER___ {
-  public init() {
+extension ___FILEBASENAMEASIDENTIFIER___ {
+  public static var testValue: Self {
+    return Self()
+  }
+}
+
+// MARK: - Preview
+
+extension ___FILEBASENAMEASIDENTIFIER___ {
+  public static var previewValue: Self {
+    return Self()
   }
 }
 
 // MARK: - DependencyKey
 
-enum ___VARIABLE_productName:identifier___Key: DependencyKey {
-  static let liveValue: ___VARIABLE_productName:identifier___Service = ___VARIABLE_productName:identifier___ServiceLive()
-  static let previewValue: ___VARIABLE_productName:identifier___Service = ___VARIABLE_productName:identifier___ServiceMock()
-  static let testValue: ___VARIABLE_productName:identifier___Service = ___VARIABLE_productName:identifier___ServiceMock()
+enum ___VARIABLE_productName:identifier___ServiceKey: DependencyKey {
+  static let liveValue: ___FILEBASENAMEASIDENTIFIER___ = .liveValue
+  static let previewValue: ___FILEBASENAMEASIDENTIFIER___ = .previewValue
+  static let testValue: ___FILEBASENAMEASIDENTIFIER___ = .testValue
 }
 
 // MARK: - DependencyValues
 
 public extension DependencyValues {
   var service___VARIABLE_productName:identifier___: ___VARIABLE_productName:identifier___Service {
-    get { self[___VARIABLE_productName:identifier___Key.self] }
-    set { self[___VARIABLE_productName:identifier___Key.self] = newValue }
+    get { self[___VARIABLE_productName:identifier___ServiceKey.self] }
+    set { self[___VARIABLE_productName:identifier___ServiceKey.self] = newValue }
   }
 }
