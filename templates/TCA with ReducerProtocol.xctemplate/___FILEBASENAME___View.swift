@@ -7,6 +7,15 @@ import ComposableArchitecture
 // MARK: - View
 
 public struct ___FILEBASENAMEASIDENTIFIER___: View {
+  @ObservedObject
+  private var viewStore: ViewStoreOf<___VARIABLE_productName:identifier___>
+  private let store: StoreOf<___VARIABLE_productName:identifier___>
+
+  public init(store: StoreOf<___VARIABLE_productName:identifier___>) {
+    self.viewStore = .init(store)
+    self.store = store
+  }
+
   public var body: some View {
     List {
       Text("Hello, ___VARIABLE_productName:identifier___!")
@@ -16,15 +25,6 @@ public struct ___FILEBASENAMEASIDENTIFIER___: View {
         .send(.onAppear)
         .finish()
     }
-  }
-
-  @ObservedObject
-  private var viewStore: ViewStoreOf<___VARIABLE_productName:identifier___>
-  private let store: StoreOf<___VARIABLE_productName:identifier___>
-
-  public init(store: StoreOf<___VARIABLE_productName:identifier___>) {
-    self.viewStore = .init(store)
-    self.store = store
   }
 }
 
