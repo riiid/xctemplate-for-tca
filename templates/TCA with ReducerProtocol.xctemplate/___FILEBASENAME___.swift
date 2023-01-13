@@ -17,7 +17,7 @@ public struct ___VARIABLE_productName:identifier___: ReducerProtocol {
     }
   }
 
-  @Dependency(\.service___VARIABLE_productName:identifier___) private var service___VARIABLE_productName:identifier___
+  @Dependency(\.environment___VARIABLE_productName:identifier___) private var environment
 
   public init() {
   }
