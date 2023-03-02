@@ -9,7 +9,7 @@ import Tests
 
 @testable import ___VARIABLE_productName:identifier___
 
-typealias TEST___VARIABLE_productName:identifier___ = TestStore<
+typealias Test___VARIABLE_productName:identifier___Store = TestStore<
   ___VARIABLE_productName:identifier___.State,
   ___VARIABLE_productName:identifier___.Action,
   ___VARIABLE_productName:identifier___.State,
@@ -20,11 +20,11 @@ typealias TEST___VARIABLE_productName:identifier___ = TestStore<
 final class ___FILEBASENAMEASIDENTIFIER___: QuickSpec {
   private let scheduler: TestSchedulerOf<DispatchQueue> = DispatchQueue.test
 
-  private func getSut() -> TEST___VARIABLE_productName:identifier___ {
-    var sut: TEST___VARIABLE_productName:identifier___
+  private func getSut() -> Test___VARIABLE_productName:identifier___Store {
+    var sut: Test___VARIABLE_productName:identifier___Store
     sut = .init(
       initialState: .init(),
-      reducer: TEST___VARIABLE_productName:identifier___()
+      reducer: ___VARIABLE_productName:identifier___()
     )
     sut.exhaustivity = .off
 
@@ -35,7 +35,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: QuickSpec {
 
   override func spec() {
     describe("___VARIABLE_productName:identifier___") {
-      var sut: TEST___VARIABLE_productName:identifier___
+      var sut: Test___VARIABLE_productName:identifier___Store
       sut = self.getSut()
 
       context("When") {
