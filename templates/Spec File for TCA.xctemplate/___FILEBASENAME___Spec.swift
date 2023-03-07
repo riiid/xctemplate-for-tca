@@ -2,10 +2,8 @@
 
 import ComposableArchitecture
 import Foundation
-import Models
 import Nimble
 import Quick
-import Tests
 
 @testable import ___VARIABLE_productName:identifier___
 
