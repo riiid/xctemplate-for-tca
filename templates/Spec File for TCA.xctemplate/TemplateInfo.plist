@@ -30,7 +30,7 @@
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
-			<string>YourApp</string>
+			<string>Your feature</string>
 			<key>NotPersisted</key>
 			<true/>
 		</dict>
