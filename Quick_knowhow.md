@@ -21,27 +21,27 @@
 
 1. Create a new group
 
-![image](https://user-images.githubusercontent.com/1744446/106472348-ee1b7f80-64e5-11eb-8ab1-717b9e386e4b.png)
+![image](https://user-images.githubusercontent.com/46320390/224585557-0c411e9f-0025-4636-a73b-52b9262b516c.png)
 
 2. <kbd>Command ⌘</kbd> + <kbd>N</kbd> <sub>or `File ❯ New ❯ File...`</sub> in the group
 3. Select `Swift files for TCA`
 4. <kbd>Next</kbd>
 
-![image]()
+![image](https://user-images.githubusercontent.com/46320390/224263617-eaa221ea-0004-48ec-aa9a-ba703b9dd1f3.png)
 
 5. Set a core<sub>module</sub> name that you want to test
 6. <kbd>Next</kbd>
 
-![image]()
+![image](https://user-images.githubusercontent.com/46320390/224587275-74108a55-f0aa-43f5-b712-1cfa552928a4.png)
 
 7. <kbd>Create</kbd> spec file in the group
 
-![image](https://user-images.githubusercontent.com/1744446/106472410-fd9ac880-64e5-11eb-8a2c-9f22ab66a5da.png)
+![image](https://user-images.githubusercontent.com/46320390/224264191-722281ff-630c-4e78-a30c-3a28501114ef.png)
+
 
 8. :tada: Your turn from here!
 
-![image]()
-
+![image](https://user-images.githubusercontent.com/46320390/224587315-ee587318-7f60-4264-b878-6aaa8ba832a1.png)
 
 [TCA]: https://github.com/pointfreeco/swift-composable-architecture
 [Quick]: https://github.com/Quick/Quick
