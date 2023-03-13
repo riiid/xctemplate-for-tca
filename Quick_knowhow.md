@@ -27,7 +27,7 @@
 3. Select `Swift files for TCA`
 4. <kbd>Next</kbd>
 
-![image](https://user-images.githubusercontent.com/46320390/224263617-eaa221ea-0004-48ec-aa9a-ba703b9dd1f3.png)
+![image](https://user-images.githubusercontent.com/46320390/224587643-ba5ce047-9f57-45f3-966b-e379751638c0.png)
 
 5. Set a core<sub>module</sub> name that you want to test
 6. <kbd>Next</kbd>
