@@ -25,27 +25,26 @@
 
 1. Create a new group
 
-![image](https://user-images.githubusercontent.com/1744446/106472348-ee1b7f80-64e5-11eb-8ab1-717b9e386e4b.png)
+![image](https://user-images.githubusercontent.com/46320390/226542124-e43b8543-0aa6-472d-aee5-b4db9d4848c2.png)
 
 2. <kbd>Command ⌘</kbd> + <kbd>N</kbd> <sub>or `File ❯ New ❯ File...`</sub> in the group
-3. Select `Swift files for TCA`
+3. Select `TCA with ReducerProtocol`
 4. <kbd>Next</kbd>
 
-![image](https://user-images.githubusercontent.com/1744446/106472373-f4a9f700-64e5-11eb-80cf-6263fb794af2.png)
+![image](https://user-images.githubusercontent.com/46320390/226542472-dc9a625c-ea71-4a20-bf52-82db3d46d7b0.png)
 
 5. Set a core<sub>module</sub> name that you want
 6. <kbd>Next</kbd>
 
-![image](https://user-images.githubusercontent.com/1744446/106472392-f96eab00-64e5-11eb-9a5f-1b81f0bd5737.png)
+![image](https://user-images.githubusercontent.com/46320390/226542550-5e26ab13-3533-4492-af34-d113aaa791f3.png)
 
 7. <kbd>Create</kbd> files in the group
 
-![image](https://user-images.githubusercontent.com/1744446/106472410-fd9ac880-64e5-11eb-8a2c-9f22ab66a5da.png)
+![image](https://user-images.githubusercontent.com/46320390/226542632-532a43f6-70fb-43aa-900c-a6b3fd65e615.png)
 
 8. :tada: Your turn from here!
 
-![image](https://user-images.githubusercontent.com/1744446/106477357-6b95be80-64eb-11eb-9e23-1c6ab7802767.png)
-
+![image](https://user-images.githubusercontent.com/46320390/226542753-122dc979-1207-4a70-a10b-75522429c2df.png)
 
 [TCA]: https://github.com/pointfreeco/swift-composable-architecture
 
