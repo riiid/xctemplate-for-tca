@@ -46,6 +46,9 @@
 
 ![image](https://user-images.githubusercontent.com/46320390/226542753-122dc979-1207-4a70-a10b-75522429c2df.png)
 
+***
+Note: If you are looking for xctemplate for TCA using AnyReducer structure, you can find it in [here](https://github.com/riiid/xctemplate-for-tca/tree/feature/tca-AnyReducer)
+
 [TCA]: https://github.com/pointfreeco/swift-composable-architecture
 
 
