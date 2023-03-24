@@ -24,29 +24,13 @@
         <key>Required</key>
         <true/>
         <key>Name</key>
-        <string>TCA Core Name: </string>
+        <string>Feature Name: </string>
         <key>Description</key>
-        <string>The name of the Core which consists of State, Action and Environment</string>
+        <string>The name of a feature which consists of State, Action and Reducer</string>
         <key>Type</key>
         <string>text</string>
         <key>Default</key>
         <string>YourApp</string>
-        <key>NotPersisted</key>
-        <true/>
-      </dict>
-      <dict>
-        <key>Identifier</key>
-        <string>WithCounterSample</string>
-        <key>Required</key>
-        <false/>
-        <key>Name</key>
-        <string>with Counter Example</string>
-        <key>Description</key>
-        <string>Generate a sample counter app</string>
-        <key>Type</key>
-        <string>checkbox</string>
-        <key>Default</key>
-        <false/>
         <key>NotPersisted</key>
         <true/>
       </dict>
