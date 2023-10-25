@@ -12,7 +12,7 @@ public struct ___FILEBASENAMEASIDENTIFIER___: View {
   private let store: StoreOf<___VARIABLE_productName:identifier___>
 
   public init(store: StoreOf<___VARIABLE_productName:identifier___>) {
-    self.viewStore = .init(store)
+    self.viewStore = .init(store, observe: { $0 })
     self.store = store
   }
 
@@ -30,14 +30,11 @@ public struct ___FILEBASENAMEASIDENTIFIER___: View {
 
 // MARK: - Preview
 
-struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
-  static var previews: some View {
-    ___FILEBASENAMEASIDENTIFIER___(store: store)
-      .previewLayout(.sizeThatFits)
-  }
+let store: StoreOf<___VARIABLE_productName:identifier___> = .init(
+  initialState: .init(),
+  reducer: { ___VARIABLE_productName:identifier___() }
+)
 
-  static let store: StoreOf<___VARIABLE_productName:identifier___> = .init(
-    initialState: .init(),
-    reducer: ___VARIABLE_productName:identifier___()
-  )
+#Preview {
+  ___FILEBASENAMEASIDENTIFIER___(store: store)
 }
