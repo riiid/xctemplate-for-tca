@@ -30,11 +30,13 @@ public struct ___FILEBASENAMEASIDENTIFIER___: View {
 
 // MARK: - Preview
 
-let store: StoreOf<___VARIABLE_productName:identifier___> = .init(
-  initialState: .init(),
-  reducer: { ___VARIABLE_productName:identifier___() }
-)
-
 #Preview {
-  ___FILEBASENAMEASIDENTIFIER___(store: store)
+  ___FILEBASENAMEASIDENTIFIER___(
+    store: .init(
+      initialState: .init(),
+      reducer: {
+        ___VARIABLE_productName:identifier___()
+      }
+    )
+  )
 }
