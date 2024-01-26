@@ -6,7 +6,16 @@
 
 ## List of templates
 
-* [TCA feature](https://github.com/riiid/xctemplate-for-tca/blob/main/tca_knowhow.md)
-* [Spec for TCA feature](https://github.com/riiid/xctemplate-for-tca/blob/main/Quick_knowhow.md)
+* [TCA feature](https://github.com/riiid/xctemplate-for-tca/blob/main/tca_howto.md)
+* [Spec for TCA feature](https://github.com/riiid/xctemplate-for-tca/blob/main/Quick_howto.md)
+* TCA Service
 
 [TCA]: https://github.com/pointfreeco/swift-composable-architecture
+
+## How to install
+
+```sh
+❯ git clone git@github.com:riiid/xctemplate-for-tca.git
+❯ cd xctemplate-for-tca
+❯ make
+```

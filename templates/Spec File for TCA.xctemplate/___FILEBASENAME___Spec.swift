@@ -7,13 +7,7 @@ import Quick
 
 @testable import ___VARIABLE_productName:identifier___
 
-typealias Test___VARIABLE_productName:identifier___Store = TestStore<
-  ___VARIABLE_productName:identifier___.State,
-  ___VARIABLE_productName:identifier___.Action,
-  ___VARIABLE_productName:identifier___.State,
-  ___VARIABLE_productName:identifier___.Action,
-  Void
->
+typealias Test___VARIABLE_productName:identifier___Store = TestStoreOf<___VARIABLE_productName:identifier___>
 
 final class ___FILEBASENAMEASIDENTIFIER___: QuickSpec {
   private let scheduler: TestSchedulerOf<DispatchQueue> = DispatchQueue.test
