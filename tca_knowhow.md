@@ -13,14 +13,6 @@
   * State
   * View(with Store)
 
-## How to install
-
-```sh
-❯ git clone git@github.com:riiid/xctemplate-for-tca.git
-❯ cd xctemplate-for-tca
-❯ make
-```
-
 ## Usage
 
 1. Create a new group
@@ -33,7 +25,7 @@
 
 ![image](https://user-images.githubusercontent.com/46320390/226542472-dc9a625c-ea71-4a20-bf52-82db3d46d7b0.png)
 
-5. Set a core<sub>module</sub> name that you want
+5. Set a feature name that you want
 6. <kbd>Next</kbd>
 
 ![image](https://user-images.githubusercontent.com/46320390/226542550-5e26ab13-3533-4492-af34-d113aaa791f3.png)
